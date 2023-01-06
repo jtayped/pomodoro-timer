@@ -1,0 +1,30 @@
+.task-item {
+    display: flex;
+    align-items: center;
+    background-color: var(--accent-color-main);
+    padding: 1.125rem;
+    list-style: none;
+    gap: 1rem;
+    border-radius: 20px;
+    color: white;
+}
+
+.task-item h3 {
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.task-item button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.task-item button img {
+    height: 100%;
+    filter: invert(95%);
+    width: 3.25em;
+}

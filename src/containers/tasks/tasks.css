@@ -1,0 +1,97 @@
+.tasks {
+  margin-top: 2rem;
+}
+
+.tasks ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.task-input {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.task-input input {
+  width: 30vw;
+  padding: 1rem 1.5rem;
+  font-size: 1.25rem;
+  background-color: transparent;
+  outline: none;
+  background-color: var(--accent-color-alt);
+  border-radius: 100px;
+  border: 3px solid var(--accent-color-main);
+}
+
+.task-input button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-family: var(--main-font);
+    font-weight: bolder;
+    font-size: 1.125rem;
+    background-color: var(--accent-color-main);
+    padding: 0.75rem 1.9rem;
+    border-radius: 100px;
+    color: white;
+}
+
+.tasks ul {
+  margin-bottom: 2rem;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    background-color: var(--accent-color-main);
+    padding: 1.125rem;
+    list-style: none;
+    gap: 1rem;
+    border-radius: 20px;
+    color: white;
+}
+
+.task-item h3 {
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.task-item button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.task-item button img {
+    height: 100%;
+    filter: invert(95%);
+    width: 3.25em;
+}
+
+@media screen and (max-width: 1200px) {
+  .task-input input, .task-item {
+    width: 45vw;
+  }
+}
+
+@media screen and (max-width: 750px) {
+    .task-input input, .task-item {
+      width: 85vw;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+  .task-input input, .task-item {
+    width: 95vw;
+  }
+}
+

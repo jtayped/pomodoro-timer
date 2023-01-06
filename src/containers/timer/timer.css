@@ -1,0 +1,60 @@
+.timer {
+  display: grid;
+  justify-content: center;
+  grid-template-rows: 70% 1fr;
+  background-color: var(--accent-color-main);
+  padding: 2rem 0rem;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 25vw;
+  margin-top: 7.5vh;
+}
+
+.timer h3 {
+  font-size: 7.5rem;
+  font-family: var(--accent-font);
+  color: var(--accent-color-alt);
+}
+
+.timer-options {
+  margin-top: -0.35rem;
+  gap: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timer-options button {
+  font-size: 1.5rem;
+  background-color: var(--accent-color-alt);
+  font-family: var(--filler-font);
+  outline: none;
+  border: 3px solid var(--accent-color);
+  border-radius: 100px;
+  color: var(--accent-color-main);
+  padding: 0.5rem 2rem
+}
+
+.timer-options p {
+  font-size: 2.5em;
+  color: var(--accent-color-alt);
+  font-family: var(--filler-font);
+}
+
+@media screen and (max-width: 1200px) {
+  .timer {
+    width: 35vw;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .timer {
+    width: 75vw;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .timer {
+    width: 85vw;
+  }
+}
