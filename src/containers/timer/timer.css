@@ -8,6 +8,7 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   width: 25vw;
   margin-top: 7.5vh;
+  z-index: 100;
 }
 
 .timer h3 {
@@ -32,7 +33,16 @@
   border: 3px solid var(--accent-color);
   border-radius: 100px;
   color: var(--accent-color-main);
-  padding: 0.5rem 2rem
+  padding: 0.5rem 2rem;
+  transition: 0.0125s;
+}
+
+.timer-options button:hover {
+  background-color: rgba(240, 219, 219, 0.75);
+  scale: 1.025;
+}
+.timer-options button:active {
+  scale: 0.95;
 }
 
 .timer-options p {
