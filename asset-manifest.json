@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/pomodoro-timer/static/css/main.4c37a414.css",
-    "main.js": "/pomodoro-timer/static/js/main.5599d208.js",
+    "main.css": "/pomodoro-timer/static/css/main.cfda9fa7.css",
+    "main.js": "/pomodoro-timer/static/js/main.7223c424.js",
     "static/js/787.1ee58fdb.chunk.js": "/pomodoro-timer/static/js/787.1ee58fdb.chunk.js",
     "index.html": "/pomodoro-timer/index.html",
-    "static/media/bin.svg": "/pomodoro-timer/static/media/bin.3270f2c93c8c138fa6cc69fbd18f985e.svg",
-    "main.4c37a414.css.map": "/pomodoro-timer/static/css/main.4c37a414.css.map",
-    "main.5599d208.js.map": "/pomodoro-timer/static/js/main.5599d208.js.map",
+    "main.cfda9fa7.css.map": "/pomodoro-timer/static/css/main.cfda9fa7.css.map",
+    "main.7223c424.js.map": "/pomodoro-timer/static/js/main.7223c424.js.map",
     "787.1ee58fdb.chunk.js.map": "/pomodoro-timer/static/js/787.1ee58fdb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c37a414.css",
-    "static/js/main.5599d208.js"
+    "static/css/main.cfda9fa7.css",
+    "static/js/main.7223c424.js"
   ]
 }
