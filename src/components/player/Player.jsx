@@ -5,6 +5,7 @@ import TrackList from "./tracks";
 
 const Player = () => {
   const [isPlaying, setIsPlaying] = useState(false);
+  // eslint-disable-next-line
   const [currentTrack, setCurrentTrack] = useState(null);
   const [audioElement, setAudioElement] = useState(null);
 
@@ -16,7 +17,7 @@ const Player = () => {
 
     const audio = new Audio(track.src);
     setAudioElement(audio);
-    
+
     audio.play();
     setIsPlaying(true);
   };
