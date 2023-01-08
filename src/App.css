@@ -7,7 +7,7 @@
 body {
   padding: 0;
   font-family: var(--main-font);
-  background-color: var(--filler-color);
+  background-color: var(--main-color);
 }
 
 .App {
@@ -16,4 +16,5 @@ body {
   flex-direction: column;
   justify-content: top;
   align-items: center;
+  padding-top: 2rem;
 }

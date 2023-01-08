@@ -62,7 +62,7 @@ const Timer = (props) => {
   return (
     <motion.div
       className="timer"
-      style={{ backgroundColor: isRest ? "#89CFF0" : "#DBA39A" }}
+      style={{ backgroundColor: isRest ? "#89CFF0" : "#77b5d9" }}
       drag
       dragConstraints={{left: 10, right: 10, top: 5, bottom: 5}}
     >

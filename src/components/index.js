@@ -1,1 +1,1 @@
-export { default as TaskItem } from './taskItem/TaskItem'
+export { default as Player } from "./player/Player";
