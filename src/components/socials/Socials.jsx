@@ -8,20 +8,28 @@ const Socials = () => {
   return (
     <motion.ul
       className="socials"
-      initial={{ y: 300 }}
-      animate={{ y: 0 }}
-      transition={{ delay: 0.25, duration: 0.5, type: "spring" }}
+      initial={{ y: 150, scale: 0 }}
+      animate={{ y: 0, scale: 1 }}
+      transition={{ delay: 0.4, duration: 0.5, type: "spring" }}
     >
       <li>
         <button>
-          <a href="https://jtayped.github.io/">
+          <a
+            href="https://jtayped.github.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={ResumeLogo} alt="My Portfolio" />
           </a>
         </button>
       </li>
       <li>
         <button>
-          <a href="https://github.com/jtayped">
+          <a
+            href="https://github.com/jtayped"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={Github} alt="My Github Page" />
           </a>
         </button>

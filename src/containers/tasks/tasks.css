@@ -1,7 +1,3 @@
-.tasks {
-  margin-top: 2rem;
-}
-
 .tasks ul {
   display: flex;
   flex-direction: column;
@@ -14,7 +10,7 @@
 }
 
 .task-input input {
-  width: 30vw;
+  width: 500px;
   padding: 1rem 1.5rem;
   font-size: 1.25rem;
   background-color: transparent;
@@ -104,23 +100,9 @@
   color: var(--accent-color-main);
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 600px) {
   .task-input input,
   .task-item {
-    width: 45vw;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  .task-input input,
-  .task-item {
-    width: 85vw;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .task-input input,
-  .task-item {
-    width: 95vw;
+    width: 375px;
   }
 }

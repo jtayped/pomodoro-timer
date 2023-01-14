@@ -1,5 +1,6 @@
 import "./timer.css";
 import React, { useState, useEffect } from "react";
+import { Player } from "../../components/index";
 import { motion } from "framer-motion";
 
 const Timer = (props) => {
@@ -63,15 +64,14 @@ const Timer = (props) => {
     <motion.div
       className="timer"
       style={{ backgroundColor: isRest ? "#89CFF0" : "#77b5d9" }}
-      drag
-      dragConstraints={{left: 10, right: 10, top: 5, bottom: 5}}
     >
-      <h3>
+      <Player />
+      <h2>
         {Math.floor(time / 60)}:{time % 60 < 10 ? `0${time % 60}` : time % 60}
-      </h3>
+      </h2>
       <div className="timer-options">
         <button onClick={toggle}>{isActive ? "Pause" : "Start"}</button>
-        <p>{counter+1}</p>
+        <p>{counter + 1}</p>
         <button onClick={reset}>Reset</button>
       </div>
     </motion.div>

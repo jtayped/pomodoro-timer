@@ -1,32 +1,25 @@
 .player {
-  border-radius: 100px;
-  background-color: var(--accent-color-main);
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  gap: 0.5rem;
-  position: fixed;
-  bottom: 3.5rem;
-  right: 3.5rem;
-  z-index: 100;
-}
-
-.player:hover {
-  filter: brightness(97.5%);
-}
-
-.player:active {
-  scale: 0.975;
+  width: 35%;
+  margin-bottom: -0.35rem;
 }
 
 .player button {
-  background-color: transparent;
+  background-color: var(--main-color);
   outline: none;
   border: none;
+  width: 100%;
+  border-radius: 100px;
+  transition: transform 0.25s;
+}
+
+.player button:hover {
+  filter: brightness(98%);
+  cursor: pointer;
+  transform: translateY(-3%);
 }
 
 .player-icon {
-  color: var(--main-color);
+  color: var(--accent-color-main);
   width: 1.75em !important;
   height: 1.75em !important;
 }

@@ -1,22 +1,22 @@
 .socials {
   display: flex;
-  position: absolute;
-  bottom: 3em;
-  gap: 2rem;
-  background-color: var(--accent-color-main);
-  padding: 1rem 2rem;
+  gap: 1rem;
+  padding: 0.5rem 2rem;
   border-radius: 10px;
+  background-color: var(--accent-color-main);
+  border-radius: 100px;
 }
 
 .socials li {
-  width: 5em;
-  height: 5em;
+  height: 3em;
+  width: 3em;
   list-style: none;
   transition: 0.15s;
 }
 
 .socials li:hover {
   scale: 1.05;
+  filter: drop-shadow(rgba(0, 0, 0, 0.05) 1.95px 1.95px 2.6px);
 }
 
 .socials button {
@@ -27,16 +27,4 @@
 
 .socials img {
   width: 100%;
-}
-
-@media screen and (max-width: 700px) {
-  .socials {
-    left: 3rem;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .socials {
-    display: none;
-  }
 }

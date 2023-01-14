@@ -2,6 +2,7 @@ import "./player.css";
 import React, { useState } from "react";
 import { VolumeUp, VolumeOff } from "@mui/icons-material";
 import TrackList from "./tracks";
+import { motion } from "framer-motion";
 
 const Player = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -32,7 +33,12 @@ const Player = () => {
   };
 
   return (
-    <div className="player">
+    <motion.div
+      className="player"
+      initial={{ width: 0, opacity: 0 }}
+      animate={{ width: "35%", opacity: 1 }}
+      transition={{ duration: 0.25 }}
+    >
       {isPlaying ? (
         <button onClick={handlePause}>
           <VolumeUp className="player-icon" />
@@ -43,7 +49,7 @@ const Player = () => {
         </button>
       )}
       <audio onEnded={handleEnded} />
-    </div>
+    </motion.div>
   );
 };
 

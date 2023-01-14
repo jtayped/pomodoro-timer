@@ -18,7 +18,6 @@ const Tasks = () => {
         },
       ]);
       inputRef.current.value = "";
-      console.log(taskList);
     }
   }
 
@@ -39,7 +38,12 @@ const Tasks = () => {
   }
 
   return (
-    <div className="tasks">
+    <motion.div
+      className="tasks"
+      initial={{ y: -200 }}
+      animate={{ y: 0 }}
+      transition={{ delay: 0.75 }}
+    >
       <div className="task-input">
         <input
           type="text"
@@ -68,7 +72,7 @@ const Tasks = () => {
           ))}
         </AnimatePresence>
       </ul>
-    </div>
+    </motion.div>
   );
 };
 
