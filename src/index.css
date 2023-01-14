@@ -1,13 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Grandstander:wght@300&family=Roboto&display=swap');
 
 :root {
-  --main-color: #FEFCF3;
-  --filler-color: #F5EBE0;
-  --accent-color-main: #DBA39A;
-  --accent-color-alt: #F0DBDB;
-
+  --main-color: #d7eaf3;
+  --accent-color-main: #77b5d9;
 
   --main-font: 'Roboto', sans-serif;
-  --filler-font: 'Bebas Neue', cursive;
-  --accent-font: 'Lobster', cursive;
+  --accent-font: 'Concert One', cursive;
 }

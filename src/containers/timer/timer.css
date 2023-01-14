@@ -5,15 +5,15 @@
   background-color: var(--accent-color-main);
   padding: 2rem 0rem;
   border-radius: 50px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   width: 25vw;
-  margin-top: 7.5vh;
+  z-index: 100;
 }
 
 .timer h3 {
   font-size: 7.5rem;
   font-family: var(--accent-font);
-  color: var(--accent-color-alt);
+  color: var(--main-color);
 }
 
 .timer-options {
@@ -26,19 +26,27 @@
 
 .timer-options button {
   font-size: 1.5rem;
-  background-color: var(--accent-color-alt);
-  font-family: var(--filler-font);
+  background-color: var(--main-color);
+  font-family: var(--accent-font);
   outline: none;
   border: 3px solid var(--accent-color);
   border-radius: 100px;
   color: var(--accent-color-main);
-  padding: 0.5rem 2rem
+  padding: 0.5rem 2rem;
+  transition: 0.0125s;
+}
+
+.timer-options button:hover {
+  filter: brightness(97.5%);
+}
+.timer-options button:active {
+  scale: 0.975;
 }
 
 .timer-options p {
   font-size: 2.5em;
-  color: var(--accent-color-alt);
-  font-family: var(--filler-font);
+  color: var(--main-color);
+  font-family: var(--accent-font);
 }
 
 @media screen and (max-width: 1200px) {

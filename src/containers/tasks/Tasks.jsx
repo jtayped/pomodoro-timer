@@ -1,7 +1,7 @@
 import "./tasks.css";
 import React, { useRef, useState } from "react";
-import Bin from "../../assets/icons/bin.svg";
 import { motion, AnimatePresence } from "framer-motion";
+import { DeleteOutline } from "@mui/icons-material";
 
 const Tasks = () => {
   const inputRef = useRef();
@@ -61,7 +61,7 @@ const Tasks = () => {
               layout
             >
               <button onClick={() => handleTaskRemove(task.id)}>
-                <img src={Bin} alt="remove button" />
+                <DeleteOutline className="delete-button" />
               </button>
               <h3>{task.title}</h3>
             </motion.li>

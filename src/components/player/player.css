@@ -1,0 +1,32 @@
+.player {
+  border-radius: 100px;
+  background-color: var(--accent-color-main);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  position: fixed;
+  bottom: 3.5rem;
+  right: 3.5rem;
+  z-index: 100;
+}
+
+.player:hover {
+  filter: brightness(97.5%);
+}
+
+.player:active {
+  scale: 0.975;
+}
+
+.player button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.player-icon {
+  color: var(--main-color);
+  width: 1.75em !important;
+  height: 1.75em !important;
+}
